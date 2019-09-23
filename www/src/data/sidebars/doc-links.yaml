@@ -257,6 +257,8 @@
           link: /docs/styling/
           breadcrumbTitle: Styling
           items:
+            - title: Fonts and Typography
+              link: /docs/fonts-and-typography/
             - title: Using Layout Components
               link: /docs/layout-components/
             - title: Standard, Global CSS Files
