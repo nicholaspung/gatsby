@@ -4,7 +4,7 @@ title: Typography.js
 
 ## Using Typography.js in Gatsby
 
-Typography.js is a JavaScript library that enables you to explore the typographic design of your website and define beautiful custom and pre-existing typographic themes. It allows you to change the font on your website with ease. Typography.js currently maintains over 30 themes for you to use. However, you can also define your own custom font themes if none of the available themes meet your requirements. To use Typography in your project, it will involve installing a [Gatsby plugin](https://www.gatsbyjs.org/packages/gatsby-plugin-typography/) and specifying a configuration object for Typography.
+Typography.js is a JavaScript library that allows you to explore the typographic design of your website and define beautiful custom and pre-existing typographic themes. It allows you to change the font on your website with ease. Typography.js currently maintains over 30 themes for you to use. However, you can also define your own custom font themes if none of the available themes meet your requirements. To use Typography in your project, it will involve installing a [Gatsby plugin](https://www.gatsbyjs.org/packages/gatsby-plugin-typography/) and specifying a configuration object for Typography.
 
 ## Installing the Typography plugin 
 
@@ -90,6 +90,6 @@ const typography = new Typography(
 export default typography;
 ```
 
-After completing the above steps, you can start the development server using the command `gatsby develop` and navigate to the local website `http://localhost:8000`. If all went well you should see the text on your website using the Funston typographic theme just installed.
+After completing the above steps, you can start the development server using the command `gatsby develop` and navigate to the local website `http://localhost:8000`. If all went well you should see the text on your website using the Funston typographic theme. If your fonts remains unchanged, remove all `font-family` calls in your CSS and check again.
 
-If you would like to find more themes to install into your project check out at the official [Typography.js](https://kyleamathews.github.io/typography.js/) website.
+To find more themes to install, check out the official [Typography.js](https://kyleamathews.github.io/typography.js/) website.
