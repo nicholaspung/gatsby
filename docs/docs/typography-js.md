@@ -4,11 +4,11 @@ title: Typography.js
 
 ## Using Typography.js in Gatsby
 
-Typography.js is a JavaScript library that enables you to define and explore the typographic design of your website and define beautiful custom and pre-existing typographic themes. It limits the number of tedious changes you need to make to your website just to change the font. Typography.js currently maintains over 30 themes for you to use, however you can also define your own custom font themes if none of the available themes meet your requirements. Implementing Typography into your project involves specifying a configuration object for Typography and installing a Gatsby plugin.
+Typography.js is a JavaScript library that enables you to explore the typographic design of your website and define beautiful custom and pre-existing typographic themes. It allows you to change the font on your website with ease. Typography.js currently maintains over 30 themes for you to use. However, you can also define your own custom font themes if none of the available themes meet your requirements. To use Typography in your project, it will involve installing a [Gatsby plugin](https://www.gatsbyjs.org/packages/gatsby-plugin-typography/) and specifying a configuration object for Typography.
 
-## Installing the Typography plugin
+## Installing the Typography plugin 
 
-Gatsby has the plugin `gatsby-plugin-typography` to assist with introducing Typography.js library into your project.
+Gatsby has the plugin `gatsby-plugin-typography` to help introduce Typography.js library to your project.
 
 You can install the plugin and its peer dependencies into your project by running the command `npm install gatsby-plugin-typography react-typography typography --save`
 
@@ -31,12 +31,8 @@ module.exports = {
 
 `gatsby-plugin-typography` takes two options for you to specify:
 
-- **pathToConfigModule**: (string) The path to the file in which you export your typography configuration.
-- **omitGoogleFont**: (boolean, default: false) Typography includes a helper that makes a request to Google’s font CDN for the fonts you
-  need. You might, however, want to inject the fonts into JS or use a
-  CDN of your choosing. Setting this value to true will make
-  gatsby-plugin-typography skip the inclusion of this helper. You will
-  have to include the appropriate fonts yourself.
+- **pathToConfigModule** (string): The path to the file where you export your Typography configuration.
+- **omitGoogleFont** (boolean, `default: false`): By default, Typography includes a helper that makes a request to Google's Font CDN for fonts you need. However, you might want to use your own fonts, either by injecting fonts or using a CDN of your choosing. By setting `omitGoogleFont: true`, gatsby-plugin-typography will skip adding the font helper. Instead, you will have to include the appropriate fonts yourself - see [Adding a Local Font](https://www.gatsbyjs.org/docs/recipes/#adding-a-local-font)
 
 ## Creating the Typography configuration
 
@@ -64,7 +60,7 @@ const typography = new Typography({
 export default typography
 ```
 
-Font sizes of all elements in Typography.js grow and shrink in relation to the `baseFontSize` defined above. Try playing around with this value and see the visual difference it can make to your website.
+Font sizes of all elements in Typography.js grow and shrink in relation to the `baseFontSize` defined above. Try playing around with this value to see the visual difference it can make to your website.
 
 A full list of options that can be specified when defining a new typography can be found at [Typography.js](https://kyleamathews.github.io/typography.js/).
 
@@ -76,8 +72,11 @@ To use the theme, edit the `typography.js` file that you created before and info
 
 ```diff:title=src/utils/typography.js
 import Typography from "typography";
+// highlight-start
 + import funstonTheme from 'typography-theme-funston'
+// highlight-end
 const typography = new Typography(
+// highlight-start
 - {
 -     baseFontSize: '18px',
 -     baseLineHeight: 1.666,
@@ -85,6 +84,7 @@ const typography = new Typography(
 -     bodyFontFamily: ['Georgia', 'serif'],
 - },
 + funstonTheme
+// highlight-end
 );
 
 export default typography;
