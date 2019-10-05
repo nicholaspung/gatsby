@@ -62,13 +62,13 @@ export default typography
 
 Font sizes of all elements in Typography.js grow and shrink in relation to the `baseFontSize` defined above. Try playing around with this value to see the visual difference it can make to your website.
 
-A full list of options that can be specified when defining a new typography can be found at [Typography.js](https://kyleamathews.github.io/typography.js/).
+To see a list of options to define a new typography, you can visit [Typography.js](https://kyleamathews.github.io/typography.js/).
 
 ## Installing Typography themes
 
-Typography.js has some built in themes that can save time when defining your websites font styling. The Funston theme maintained by Typography is one such theme and can be installed from npm running the command: `npm install typography-theme-funston --save`
+Typography.js has built in themes that can save time when defining your website's font styling. The Funston theme, maintained by Typography, is one of the built in themes. To install the Funston theme from npm, run the command: `npm install typography-theme-funston --save`
 
-To use the theme, edit the `typography.js` file that you created before and inform typography of the new configuration:
+To use the theme, edit the `typography.js` file that you created before and inform Typography of the new configuration:
 
 ```diff:title=src/utils/typography.js
 import Typography from "typography";
