@@ -294,6 +294,16 @@
                   link: /docs/bulma/
                 - title: Using Theme UI
                   link: /docs/theme-ui/
+        - title: Working with Fonts and Typography
+          link: /docs/fonts-and-typography/
+          breadcrumbTitle: Fonts and Typography
+          items:
+            - title: Adding a Local Font
+              link: /docs/fonts-and-typography/adding-a-local-font/
+            - title: Import Assets into Files
+              link: /docs/fonts-and-typography/importing-assets-into-files/
+            - title: Using Typography.js
+              link: /docs/fonts-and-typography/typography-js/
         - title: Adding Components to Markdown with MDX
           link: /docs/mdx/
           breadcrumbTitle: MDX
